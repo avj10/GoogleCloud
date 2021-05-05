@@ -63,8 +63,8 @@
     ````
    
 7. Cleanup
-- To avoid incurring unnecessary charges to your GCP account after completion of this quickstart:
-    1. [Delete the Cloud Storage bucket](https://cloud.google.com/storage/docs/deleting-buckets) for the environment and that you created.
-    2. [Delete the Cloud Dataproc environment](https://cloud.google.com/dataproc/docs/guides/manage-cluster)
-    3. If you created a project just for this codelab, you can also optionally delete the project.
+    - To avoid incurring unnecessary charges to your GCP account after completion of this quickstart:
+        1. [Delete the Cloud Storage bucket](https://cloud.google.com/storage/docs/deleting-buckets) for the environment and that you created.
+        2. [Delete the Cloud Dataproc environment](https://cloud.google.com/dataproc/docs/guides/manage-cluster)
+        3. If you created a project just for this codelab, you can also optionally delete the project.
     
