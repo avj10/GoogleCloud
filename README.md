@@ -1,4 +1,8 @@
-# GoogleCloud
+# Google Cloud Platform
 
-## Big Query to cloud storage using PySpark in GCP Dataproc
 
+## Services
+
+- Dataproc
+- BigQuery
+- Cloud Storage
