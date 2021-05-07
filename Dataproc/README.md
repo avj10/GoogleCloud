@@ -2,7 +2,7 @@
 
 ## Big Query to cloud storage using PySpark in GCP Dataproc
 
-### Setting Up Our Environment
+### Steps to run bigQueryToCloudStorage.py
 
 1. First, we need to enable Cloud Dataproc, Compute Engine and the Google Cloud Dataproc APIs.
 
@@ -68,5 +68,6 @@
         2. [Delete the Cloud Dataproc environment](https://cloud.google.com/dataproc/docs/guides/manage-cluster)
         3. If you created a project just for this codelab, you can also optionally delete the project.
     
+
 ##Reference
 [PySpark for Preprocessing BigQuery Data](https://clmirror.storage.googleapis.com/codelabs/pyspark-bigquery/index.html?index=..%2F..index#0)
