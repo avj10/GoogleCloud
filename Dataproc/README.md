@@ -47,6 +47,7 @@
     ````
     gcloud dataproc jobs submit pyspark \
         --cluster ${CLUSTER_NAME} \
+        --region=${REGION} \
         --jars gs://spark-lib/bigquery/spark-bigquery-latest.jar \
         --driver-log-levels root=FATAL \
         bigQueryToCloudStorage.py \
@@ -54,8 +55,9 @@
     ````
    Example:
    ````
-    gcloud dataproc jobs submit pyspark \
+   gcloud dataproc jobs submit pyspark \
         --cluster ${CLUSTER_NAME} \
+        --region=${REGION} \
         --jars gs://spark-lib/bigquery/spark-bigquery-latest.jar \
         --driver-log-levels root=FATAL \
         bigQueryToCloudStorage.py \

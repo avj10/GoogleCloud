@@ -5,13 +5,6 @@ import sys
 # A Spark Session is how we interact with Spark SQL to create Dataframes
 from pyspark.sql import SparkSession
 
-# PySpark function for replacing characters using a regex.
-# Use this to remove newline characters.
-from pyspark.sql.functions import regexp_replace, col
-
-# Library for interacting with Google Cloud Storage
-from google.cloud import storage
-
 # This will help catch some PySpark errors
 from py4j.protocol import Py4JJavaError
 
