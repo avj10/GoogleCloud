@@ -25,11 +25,7 @@
      --region=${REGION} \
      --worker-machine-type n1-standard-2 \
      --num-workers 2 \
-     --image-version 1.4-debian9 \
-     --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh \
-     --metadata 'PIP_PACKAGES=google-cloud-storage' \
-     --optional-components=ANACONDA \
-     --enable-component-gateway
+     --image-version 1.4-debian9
     ```
 4. Next, run the following commands in your Cloud Shell to clone the repo with the sample code and cd into the correct directory:
     ```
