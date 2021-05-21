@@ -15,9 +15,7 @@ start = time.time()
 spark = SparkSession.builder.appName("reddit").getOrCreate()
 
 # Establish a set of years and months to iterate over
-year = sys.argv[1]
-month = sys.argv[2]
-bucket_name = sys.argv[3]
+bucket_name = sys.argv[1]
 
 # Establish a subreddit to process
 subreddit = 'food'
@@ -27,7 +25,7 @@ subreddit = 'food'
 tables_read = []
 
 # In the form of <project-id>.<dataset>.<table>
-table = f"fh-bigquery.reddit_posts.{year}_{month}"
+table = f"bigdata-poc-281913.COVID_Dataset.covid_19_india"
 
 # If the table doesn't exist simply continue and not
 # log it into our "tables_read" list
@@ -39,7 +37,7 @@ except Py4JJavaError:
 
 print(f"Processing {table}.")
 
-output_path = "gs://" + bucket_name + "/Reddit_posts/" + year + "/" + month
+output_path = "gs://" + bucket_name + "/COVID_Dataset/covid_19_india"
 
 df\
     .coalesce(1)\
