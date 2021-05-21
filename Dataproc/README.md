@@ -39,7 +39,7 @@
    BUCKET_NAME=<bucket_name>
    ```
 
-6. Great now we are all set to submit PySpark job. Enter following command by passing `year` and `month` as arguments value. e.g. `2017` `03`
+6. Great now we are all set to submit PySpark job.
     ````
     gcloud dataproc jobs submit pyspark \
         --cluster ${CLUSTER_NAME} \
@@ -47,7 +47,7 @@
         --jars gs://spark-lib/bigquery/spark-bigquery-latest.jar \
         --driver-log-levels root=FATAL \
         bigQueryToCloudStorage.py \
-        -- ${year} ${month} ${BUCKET_NAME}
+        -- ${BUCKET_NAME}
     ````
    Example:
    ````
@@ -57,7 +57,7 @@
         --jars gs://spark-lib/bigquery/spark-bigquery-latest.jar \
         --driver-log-levels root=FATAL \
         bigQueryToCloudStorage.py \
-        -- 2017 03 ${BUCKET_NAME}
+        -- ${BUCKET_NAME}
     ````
    
 7. Cleanup
