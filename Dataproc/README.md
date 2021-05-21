@@ -49,16 +49,6 @@
         bigQueryToCloudStorage.py \
         -- ${BUCKET_NAME}
     ````
-   Example:
-   ````
-   gcloud dataproc jobs submit pyspark \
-        --cluster ${CLUSTER_NAME} \
-        --region=${REGION} \
-        --jars gs://spark-lib/bigquery/spark-bigquery-latest.jar \
-        --driver-log-levels root=FATAL \
-        bigQueryToCloudStorage.py \
-        -- ${BUCKET_NAME}
-    ````
    
 7. Cleanup
     - To avoid incurring unnecessary charges to your GCP account after completion of this quickstart:
