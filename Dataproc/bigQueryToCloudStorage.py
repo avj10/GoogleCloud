@@ -12,14 +12,10 @@ from py4j.protocol import Py4JJavaError
 start = time.time()
 
 # Create a SparkSession under the name "reddit". Viewable via the Spark UI
-spark = SparkSession.builder.appName("reddit").getOrCreate()
+spark = SparkSession.builder.appName("covid19").getOrCreate()
 
 # Establish a set of years and months to iterate over
 bucket_name = sys.argv[1]
-
-# Establish a subreddit to process
-subreddit = 'food'
-
 
 # Keep track of all tables accessed via the job
 tables_read = []
